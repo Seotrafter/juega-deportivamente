@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fill-a-Pix: Minesweeper Puzzle - Juego en línea brillante y adictivo. Descubre la experiencia única en juega-deportivamente.com">
+  <meta name="author" content="juega-deportivamente.com">
+  <meta name="geo.region" content="CL">
+  <title>Fill-a-Pix: Minesweeper Puzzle - Juega Deportivamente</title>
+  <link rel="icon" href="favicon.ico">
+  <!-- Cambio de fuente: se utiliza "Press Start 2P" para un estilo retro -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold">Fill-a-Pix</a>
+      <ul class="flex space-x-4">
+        <li><a href="/" class="hover:text-yellow-400">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section id="hero" class="relative bg-cover bg-center text-white py-12 text-center" style="background-image: url('img/hero-bg.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative container mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4">Fill-a-Pix: Minesweeper Puzzle</h1>
+      <p class="text-xl mb-6">¡Disfruta del mejor juego de puzzles en línea!</p>
+      <a href="https://play.google.com/store/apps/details?id=com.conceptispuzzles.fap&hl=en" target="_blank">
+        <img src="img/google-play-button.png" alt="Descargar en Google Play" class="mx-auto" style="width:300px;">
+      </a>
+    </div>
+  </section>
+
+  <section id="advantages" class="py-12">
+    <div class="container mx-auto px-4 retro-section">
+      <h2 class="text-3xl font-bold text-center mb-6">Ventajas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded shadow text-center">
+          <i class="fas fa-brain text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Estimula tu mente</h3>
+          <p>Desarrolla habilidades lógicas y estratégicas en cada nivel.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow text-center">
+          <i class="fas fa-mobile-alt text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Juego móvil</h3>
+          <p>Disfruta del juego en cualquier lugar y en cualquier dispositivo.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow text-center">
+          <i class="fas fa-star text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Alta calidad</h3>
+          <p>Interfaz intuitiva y diseño vibrante para una experiencia única.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="py-12">
+    <div class="container mx-auto px-4 retro-section">
+      <h2 class="text-3xl font-bold text-center mb-6">Sobre el juego</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-6 md:mb-0">
+          <p class="mb-4">Fill-a-Pix es un juego de puzzle que combina la estrategia del buscaminas con la creatividad del dibujo. Pon a prueba tu mente y diviértete descubriendo patrones ocultos.</p>
+          <p>Experimenta una interfaz intuitiva y un diseño vibrante que ofrece horas de entretenimiento.</p>
+        </div>
+        <div class="md:w-1/2">
+          <video class="w-full rounded shadow-lg" controls>
+            <source src="https://play-games.googleusercontent.com/vp/mp4/1280x720/0I6ldq2NJ24.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="rules" class="py-12">
+    <div class="container mx-auto px-4 retro-section">
+      <h2 class="text-3xl font-bold text-center mb-6">Descripción y Reglas del Juego</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <!-- Ruta de imagen local en lugar de placeholder -->
+          <img src="img/reglas.jpg" alt="Reglas del Juego" class="w-full rounded shadow-lg">
+        </div>
+        <div class="md:w-1/2 md:pl-6">
+          <p class="mb-4">El objetivo en Fill-a-Pix es revelar una imagen oculta completando un puzzle basado en pistas numéricas. Cada número indica cuántas casillas deben ser pintadas en esa fila o columna.</p>
+          <ul class="list-disc list-inside mb-4">
+            <li>Utiliza las pistas para marcar las casillas correctas.</li>
+            <li>Evita errores y descubre la imagen oculta.</li>
+            <li>Disfruta de múltiples niveles de dificultad.</li>
+          </ul>
+          <p>La clave es la paciencia, la lógica y un toque de creatividad. ¡Atrévete a jugar y demuestra tus habilidades!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="gallery" class="py-12">
+    <div class="container mx-auto px-4 retro-section">
+      <h2 class="text-3xl font-bold text-center mb-6">Galería</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Rutas locales a imágenes de galería -->
+          <div class="swiper-slide">
+            <img src="img/gal1.jpg" alt="Captura 1" class="w-full rounded shadow-lg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gal2.jpg" alt="Captura 2" class="w-full rounded shadow-lg">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gal3.jpg" alt="Captura 3" class="w-full rounded shadow-lg">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="reviews" class="py-12">
+    <div class="container mx-auto px-4 retro-section">
+      <h2 class="text-3xl font-bold text-center mb-6">Reseñas</h2>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="mb-2"><i class="fas fa-quote-left text-yellow-500"></i> ¡Un juego increíble que mantiene mi mente activa y me entretiene durante horas!</p>
+          <p class="font-bold text-right">- Usuario 1</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="mb-2"><i class="fas fa-quote-left text-yellow-500"></i> Diseño vibrante y mecánica adictiva que te atrapa desde el primer momento.</p>
+          <p class="font-bold text-right">- Usuario 2</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="mb-2"><i class="fas fa-quote-left text-yellow-500"></i> La combinación perfecta de estrategia y diversión. ¡Recomendado!</p>
+          <p class="font-bold text-right">- Usuario 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="retro-section py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <div class="md:w-1/2">
+          <form action="#" method="post" class="p-6 bg-gray-800 rounded shadow">
+            <div class="mb-4">
+              <label for="name" class="block text-lg font-semibold mb-2">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" class="w-full p-2 rounded border border-gray-700 bg-gray-900 text-white">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-lg font-semibold mb-2">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" class="w-full p-2 rounded border border-gray-700 bg-gray-900 text-white">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-lg font-semibold mb-2">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" class="w-full p-2 rounded border border-gray-700 bg-gray-900 text-white"></textarea>
+            </div>
+            <button type="submit" class="btn-retro w-full">Enviar</button>
+          </form>
+        </div>
+        <div class="md:w-1/2">
+          <img src="img/contact-image.jpg" alt="Contáctanos" class="w-full rounded shadow-lg ">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="faq" class="py-12">
+  <div class="container mx-auto px-4 retro-section">
+    <h2 class="text-3xl font-bold text-center mb-6">Preguntas Frecuentes</h2>
+    <div class="space-y-4 max-w-3xl mx-auto">
+      <div class="faq-item bg-gray-800 p-4 rounded shadow cursor-pointer">
+        <h3 class="font-semibold">¿Cómo se juega Fill-a-Pix?</h3>
+        <p class="faq-answer mt-2">
+          Fill-a-Pix es un juego de puzzles en el que cada número indica la cantidad exacta de casillas que deben ser coloreadas en una fila o columna. El objetivo es descubrir la imagen oculta usando la lógica y la deducción sin equivocarse.
+        </p>
+      </div>
+      <div class="faq-item bg-gray-800 p-4 rounded shadow cursor-pointer">
+        <h3 class="font-semibold">¿Cuáles son algunas estrategias para resolver los puzzles?</h3>
+        <p class="faq-answer mt-2">
+          Una buena estrategia es empezar por las filas o columnas con números altos, ya que ofrecen pistas más claras. También es útil marcar provisionalmente aquellas casillas que podrían formar parte de la solución y luego ajustar conforme se revelen más detalles.
+        </p>
+      </div>
+      <div class="faq-item bg-gray-800 p-4 rounded shadow cursor-pointer">
+        <h3 class="font-semibold">¿Puedo ajustar la dificultad del juego?</h3>
+        <p class="faq-answer mt-2">
+          Sí, el juego ofrece múltiples niveles de dificultad para adaptarse tanto a principiantes como a expertos. Puedes seleccionar el nivel que mejor se ajuste a tu experiencia y desafiarte progresivamente con puzzles más complejos.
+        </p>
+      </div>
+      <div class="faq-item bg-gray-800 p-4 rounded shadow cursor-pointer">
+        <h3 class="font-semibold">¿El juego requiere conexión a Internet?</h3>
+        <p class="faq-answer mt-2">
+          Fill-a-Pix se puede jugar sin conexión una vez descargado, aunque algunas funciones como actualizaciones de puzzles y sincronización de puntajes pueden necesitar acceso a Internet ocasionalmente.
+        </p>
+      </div>
+      <div class="faq-item bg-gray-800 p-4 rounded shadow cursor-pointer">
+        <h3 class="font-semibold">¿Es compatible con dispositivos móviles y táctiles?</h3>
+        <p class="faq-answer mt-2">
+          Absolutamente, el juego ha sido optimizado para funcionar en dispositivos móviles y pantallas táctiles, ofreciendo una interfaz intuitiva y controles adaptados para garantizar una experiencia fluida en cualquier dispositivo.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Políticas</h3>
+        <ul>
+          <li><a href="politica-de-privacidad.html" class="hover:text-yellow-400">Política de Privacidad</a></li>
+          <li><a href="terminos-de-uso.html" class="hover:text-yellow-400">Términos de Uso</a></li>
+          <li><a href="politica-de-cookies.html" class="hover:text-yellow-400">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+        <form action="#" method="post" class="flex flex-col">
+          <input type="email" name="newsletter-email" placeholder="Tu correo electrónico" class="p-2 rounded mb-2 bg-gray-800 border border-gray-700 text-white" required>
+          <button type="submit" class="btn-retro">Suscribirse</button>
+        </form>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contacto</h3>
+        <p>Escríbenos a: <a href="mailto:info@juega-deportivamente.com" class="hover:text-yellow-400">info@juega-deportivamente.com</a></p>
+      </div>
+    </div>
+    <div class="mt-8 text-center">
+      <p>&copy; 2025 juega-deportivamente.com - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="cookieBanner" class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex flex-col md:flex-row items-center justify-between z-50">
+    <p class="mb-2 md:mb-0">
+      Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas su uso. 
+      <a href="politica-de-cookies.html" class="underline hover:text-yellow-400">Más información</a>
+    </p>
+    <button id="acceptCookies" class="btn-retro">Aceptar</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+  </script>
+  <script src="scripts.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const banner = document.getElementById("cookieBanner");
+      const acceptBtn = document.getElementById("acceptCookies");
+      acceptBtn.addEventListener("click", function() {
+        banner.style.display = "none";
+        // Aquí puedes agregar código para guardar la aceptación en una cookie/localStorage si es necesario.
+      });
+    });
+  </script>
+</body>
+</html>

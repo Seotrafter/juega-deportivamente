@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+Sitemap: https://juega-deportivamente.com/sitemap.xml

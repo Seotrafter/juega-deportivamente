@@ -1,0 +1,57 @@
+body {
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  background-color: #1a1a1d;
+  color: #c5c6c7;
+}
+h1, h2, h3, p, a {
+  text-shadow: 1px 1px 2px #000;
+}
+.retro-section {
+  border: 2px solid #fca311;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #2b2b2e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.btn-retro {
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  border: 2px solid #fca311;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-retro:hover {
+  background-color: #fca311;
+  color: #1a1a1d;
+}
+.faq-item.active {
+  background-color: #fde68a;
+}
+.faq-answer {
+  transition: max-height 0.3s ease;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+#cookieBanner {
+  font-size: 17px;
+}
+#gallery {
+  position: relative;
+  overflow-x: hidden;
+}
+#gallery img {
+  max-width: 320px;
+}
+img {
+  width: 100%;
+}
